@@ -51,7 +51,7 @@
                                     <color key="titleShadowColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="push" identifier="goToRegistration" id="wAs-K8-9Nq"/>
+                                    <segue destination="BYZ-38-t0r" kind="show" identifier="goToRegistration" id="wAs-K8-9Nq"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -72,7 +72,7 @@
                     </view>
                     <connections>
                         <outlet property="titleLabel" destination="y7D-jv-BlJ" id="7U9-Ah-qfi"/>
-                        <segue destination="lwd-AH-u8E" kind="push" identifier="goToChat" id="qu6-wg-pqO"/>
+                        <segue destination="lwd-AH-u8E" kind="show" identifier="goToChat" id="qu6-wg-pqO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="X0w-oB-wTX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -82,9 +82,9 @@
         <!--Register View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="RegisterViewController" customModule="EasyChat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="BYZ-38-t0r" customClass="RegisterViewController" customModule="EasyChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="h2S-Ae-zdW">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Scg-da-zi8" userLabel="EmailView">
@@ -177,9 +177,9 @@
         <!--Login View Controller-->
         <scene sceneID="Hzg-jR-yiY">
             <objects>
-                <viewController id="5v2-hE-4Ub" customClass="LoginViewController" customModule="EasyChat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="5v2-hE-4Ub" customClass="LoginViewController" customModule="EasyChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NR3-PA-yDz">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mkq-A4-A98" userLabel="EmailView">
@@ -227,7 +227,7 @@
                                         </state>
                                         <connections>
                                             <action selector="loginPressed:" destination="5v2-hE-4Ub" eventType="touchUpInside" id="Wlk-ga-czK"/>
-                                            <segue destination="lwd-AH-u8E" kind="push" identifier="goToChat" id="oYb-Xk-Rcb"/>
+                                            <segue destination="lwd-AH-u8E" kind="show" identifier="goToChat" id="oYb-Xk-Rcb"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -272,13 +272,13 @@
         <!--Chat View Controller-->
         <scene sceneID="yeH-Ia-3JZ">
             <objects>
-                <viewController id="lwd-AH-u8E" customClass="ChatViewController" customModule="EasyChat" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController modalPresentationStyle="fullScreen" id="lwd-AH-u8E" customClass="ChatViewController" customModule="EasyChat" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="CEy-W8-acN">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="716"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="S6L-hg-cne">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="656"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="676"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="ReusableCell" id="fAI-uC-s9a">
@@ -292,7 +292,7 @@
                                 </prototypes>
                             </tableView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="xlo-0G-XA6">
-                                <rect key="frame" x="0.0" y="656" width="414" height="60"/>
+                                <rect key="frame" x="0.0" y="676" width="414" height="60"/>
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Write a message..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="UWj-GQ-Vph">
                                         <rect key="frame" x="20" y="20" width="314" height="40"/>
