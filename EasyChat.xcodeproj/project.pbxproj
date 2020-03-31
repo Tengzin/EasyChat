@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,7 +17,10 @@
 		0B62818F235DF01000E35CAF /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B62818E235DF01000E35CAF /* LoginViewController.swift */; };
 		0B628191235DF01B00E35CAF /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B628190235DF01B00E35CAF /* ChatViewController.swift */; };
 		0B62819E235F0F4D00E35CAF /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 0B62819D235F0F4D00E35CAF /* README.md */; };
+		286E1F1024326B3400278CCB /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 286E1F0E24326B3400278CCB /* MessageCell.swift */; };
+		286E1F1124326B3400278CCB /* MessageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 286E1F0F24326B3400278CCB /* MessageCell.xib */; };
 		287B5399242E85C700F3C642 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 287B5398242E85C700F3C642 /* GoogleService-Info.plist */; };
+		287CC5F1243387EC005646EB /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 287CC5F0243387EC005646EB /* Message.swift */; };
 		B052A5228BABA4344882EA24 /* Pods_EasyChat.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CC227D8BA1B5F3335F1A749B /* Pods_EasyChat.framework */; };
 /* End PBXBuildFile section */
 
@@ -34,7 +37,10 @@
 		0B62818E235DF01000E35CAF /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		0B628190235DF01B00E35CAF /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
 		0B62819D235F0F4D00E35CAF /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		286E1F0E24326B3400278CCB /* MessageCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		286E1F0F24326B3400278CCB /* MessageCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessageCell.xib; sourceTree = "<group>"; };
 		287B5398242E85C700F3C642 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		287CC5F0243387EC005646EB /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Message.swift; path = EasyChat/Views/Message.swift; sourceTree = SOURCE_ROOT; };
 		87281F6DF3397D28D77AF8FC /* Pods-EasyChat.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyChat.release.xcconfig"; path = "Target Support Files/Pods-EasyChat/Pods-EasyChat.release.xcconfig"; sourceTree = "<group>"; };
 		CC227D8BA1B5F3335F1A749B /* Pods_EasyChat.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EasyChat.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA7205206A7E22EA62FCC4B1 /* Pods-EasyChat.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EasyChat.debug.xcconfig"; path = "Target Support Files/Pods-EasyChat/Pods-EasyChat.debug.xcconfig"; sourceTree = "<group>"; };
@@ -58,7 +64,6 @@
 				FA7205206A7E22EA62FCC4B1 /* Pods-EasyChat.debug.xcconfig */,
 				87281F6DF3397D28D77AF8FC /* Pods-EasyChat.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -112,6 +117,8 @@
 			isa = PBXGroup;
 			children = (
 				0B62817C235DEE8100E35CAF /* Main.storyboard */,
+				286E1F0E24326B3400278CCB /* MessageCell.swift */,
+				286E1F0F24326B3400278CCB /* MessageCell.xib */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -119,6 +126,7 @@
 		0B628194235DF03A00E35CAF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				287CC5F0243387EC005646EB /* Message.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -192,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0B628183235DEE8400E35CAF /* LaunchScreen.storyboard in Resources */,
+				286E1F1124326B3400278CCB /* MessageCell.xib in Resources */,
 				0B628180235DEE8400E35CAF /* Assets.xcassets in Resources */,
 				287B5399242E85C700F3C642 /* GoogleService-Info.plist in Resources */,
 				0B62819E235F0F4D00E35CAF /* README.md in Resources */,
@@ -253,7 +262,9 @@
 				0B628179235DEE8100E35CAF /* SceneDelegate.swift in Sources */,
 				0B62818F235DF01000E35CAF /* LoginViewController.swift in Sources */,
 				0B628191235DF01B00E35CAF /* ChatViewController.swift in Sources */,
+				287CC5F1243387EC005646EB /* Message.swift in Sources */,
 				0B62818D235DF00B00E35CAF /* RegisterViewController.swift in Sources */,
+				286E1F1024326B3400278CCB /* MessageCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

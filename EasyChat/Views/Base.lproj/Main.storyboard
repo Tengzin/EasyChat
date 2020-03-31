@@ -286,7 +286,7 @@
             </objects>
             <point key="canvasLocation" x="948" y="644"/>
         </scene>
-        <!--Chat View Controller-->
+        <!--EasyChat-->
         <scene sceneID="yeH-Ia-3JZ">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="lwd-AH-u8E" customClass="ChatViewController" customModule="EasyChat" customModuleProvider="target" sceneMemberID="viewController">
@@ -366,7 +366,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6YX-ca-E8f"/>
                     </view>
-                    <navigationItem key="navigationItem" id="Q5u-eL-Bgp">
+                    <navigationItem key="navigationItem" title="EasyChat" id="Q5u-eL-Bgp">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="EyN-fp-CmM">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RgP-AI-HnI">
                                 <rect key="frame" x="302" y="7" width="92" height="30"/>
@@ -382,7 +382,9 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
+                        <outlet property="heightConstraint" destination="cV2-4S-DU8" id="8HD-Ee-Kvp"/>
                         <outlet property="messageTextfield" destination="UWj-GQ-Vph" id="INS-Xk-EA9"/>
+                        <outlet property="sendButton" destination="pym-e9-R2r" id="g4V-e9-AOT"/>
                         <outlet property="tableView" destination="S6L-hg-cne" id="dTJ-K9-WAe"/>
                     </connections>
                 </viewController>
