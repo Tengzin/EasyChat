@@ -244,7 +244,6 @@
                                         </state>
                                         <connections>
                                             <action selector="loginPressed:" destination="5v2-hE-4Ub" eventType="touchUpInside" id="Wlk-ga-czK"/>
-                                            <segue destination="lwd-AH-u8E" kind="show" identifier="goToChat" id="oYb-Xk-Rcb"/>
                                         </connections>
                                     </button>
                                 </subviews>
@@ -280,13 +279,14 @@
                     <connections>
                         <outlet property="emailTextfield" destination="F21-w0-z4z" id="YUG-Hl-Rxj"/>
                         <outlet property="passwordTextfield" destination="abR-gz-opL" id="xCU-X2-hrx"/>
+                        <segue destination="lwd-AH-u8E" kind="show" identifier="goToChat" id="qH2-g8-4oB"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="XcE-Gk-YZg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="948" y="644"/>
+            <point key="canvasLocation" x="967" y="656"/>
         </scene>
-        <!--EasyChat-->
+        <!--Chat View Controller-->
         <scene sceneID="yeH-Ia-3JZ">
             <objects>
                 <viewController modalPresentationStyle="fullScreen" id="lwd-AH-u8E" customClass="ChatViewController" customModule="EasyChat" customModuleProvider="target" sceneMemberID="viewController">
@@ -366,7 +366,7 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6YX-ca-E8f"/>
                     </view>
-                    <navigationItem key="navigationItem" title="EasyChat" id="Q5u-eL-Bgp">
+                    <navigationItem key="navigationItem" id="Q5u-eL-Bgp">
                         <barButtonItem key="rightBarButtonItem" style="plain" id="EyN-fp-CmM">
                             <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RgP-AI-HnI">
                                 <rect key="frame" x="302" y="7" width="92" height="30"/>
@@ -410,6 +410,6 @@
         </namedColor>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="oYb-Xk-Rcb"/>
+        <segue reference="qH2-g8-4oB"/>
     </inferredMetricsTieBreakers>
 </document>
